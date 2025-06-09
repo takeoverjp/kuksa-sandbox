@@ -1,0 +1,9 @@
+[package]
+name = "kuksa-sandbox"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+tokio = { version = "1.17.0", features = ["full"] }
+tokio-stream = "0.1.8"
+kuksa-rust-sdk = "0.1.3"

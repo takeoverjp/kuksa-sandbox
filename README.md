@@ -78,3 +78,14 @@ called `Result::unwrap()` on an `Err` value: Status(Status { code: Unimplemented
 note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 
 ```
+
+## 環境構築
+
+参考：https://github.com/eclipse-kuksa/kuksa-databroker
+
+```
+docker network create kuksa
+docker run -it --rm --name Server -p 55555:55555 --network kuksa ghcr.io/eclipse-kuksa/kuksa-databroker:main --insecure
+docker run -it --rm --network kuksa ghcr.io/eclipse-kuksa/kuksa-databroker-cli:main --server Server:55555
+ksa.val.v1 > publish Vehicle.Speed 100.34
+```
