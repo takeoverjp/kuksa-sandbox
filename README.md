@@ -1,6 +1,10 @@
 # kuksa-sandbox
 Sandbox for kuksa-databroker
 
+## VSSメモ
+
+- VSSでは、配列やインデックス番号(`Door[0]`)ではなく、論理名(`Door.FrontLeft`)で装備を特定する
+
 ## 参考
 
 - [Kuksa Quickstart](https://eclipse-kuksa.github.io/kuksa-website/quickstart/)
